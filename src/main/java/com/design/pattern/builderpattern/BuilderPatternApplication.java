@@ -17,6 +17,11 @@ public class BuilderPatternApplication {
         System.out.println();
 		System.out.println("Starting Spring-Boot Application: Builder Design Pattern...!");
 
+		Driver.builder().setName("Bilal").setAge(20)
+				.setGender(Gender.MALE.name())
+				.setMaritalStatus(MaritalStatus.SINGLE.name())
+				.build();
+
 
 	}
 }
